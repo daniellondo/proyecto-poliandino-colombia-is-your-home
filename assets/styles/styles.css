@@ -1,8 +1,50 @@
-/*#logo{
-    width:4rem;
-    height: auto;
-}*/
+body {
+    font-family: GothamLight, Tahoma, Geneva, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: normal !important;
+}
 
-#buttonsend{
-    background-color: green;
+.divfootercontactus{
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.circle-icon {
+    background: white;
+    padding:5px;
+    border-radius: 50%;
+}
+
+.divcontactus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.divcontactus div{
+    display: flex;
+    flex-direction: row;
+}
+.divcontactus div div{
+    display: flex;
+    flex-direction: column;
+}
+
+.divsocialmedia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.copyright{
+    background-color: #95CB44;
+}
+
+footer{
+    background-color: #003A2C;
+}
+
+.bx{
+    color: #95CB44;
 }
