@@ -4,5 +4,21 @@
 }*/
 
 #buttonsend{
-    background-color: green;
+    background-color: rgb(26, 222, 26);
+}
+
+#contacto{
+    color: rgb(26, 222, 26);
+}
+
+#contactobox{
+    background-color: rgb(228, 245, 228);
+}
+
+#texto{
+    color: gray;
+}
+
+#quienessomos{
+    color: rgb(26, 222, 26)
 }
