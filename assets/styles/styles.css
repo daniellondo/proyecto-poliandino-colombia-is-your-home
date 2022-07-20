@@ -1,9 +1,35 @@
 body {
-    font-family: GothamLight, Tahoma, Geneva, sans-serif !important;
-    font-size: 1.5rem !important;
+    font-family: 'Roboto Flex', sans-serif !important;
+    font-size: 16px !important;
     font-weight: normal !important;
 }
 
+.nav-item{
+        letter-spacing: 1px !important;
+        padding: 0 11px !important; 
+        border-left: solid #95CB44;
+}
+
+.nav-item:last-child{
+    border-right: solid #95CB44;
+}
+
+header{
+    width: 100%;
+    height: 140px !important;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #95CB44;
+}
+
+#logo{
+    width: 80%;
+    height: auto;
+}
+
+.logolink{
+    width: 10%;
+    height: auto;
+}
 .divfootercontactus{
     padding-right: 1rem;
     padding-bottom: 1rem;
@@ -46,7 +72,7 @@ footer{
 }
 
 .bx{
-    color: #95CB44;
+    color: #008037;
 }
 
 
