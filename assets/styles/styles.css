@@ -351,3 +351,22 @@ cursor: pointer;
 
 
 /* itermina Styles sección de servicios galería  */
+
+
+/* inicia styles sección contacto  */
+
+.cabeceracontenedor{
+    display: flex;
+}
+.cabecerah2{
+    position:absolute;
+    font-size:xx-large;
+    top: 0px;
+    color: white;
+    background-color: #95CB44;
+    width: 18%;
+    margin-top: 15%;
+    padding: 1px;
+}
+
+/* termina styles sección contacto */
