@@ -113,7 +113,7 @@ font-size: medium;
 .gallery-container {
     margin: auto;
     display: flex;
-    width: 100%;
+    width: 94vw;
     height: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -125,8 +125,8 @@ font-size: medium;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-auto-rows: 320px;
-    padding: 20px;
-    grid-gap: 10px;
+    padding: 10px;
+    grid-gap: 5px;
 }
 
 .gallery__item {
@@ -135,8 +135,8 @@ font-size: medium;
 }
 
 .gallery__img {
-width: 320px;
-height: 320px;
+width: 300px;
+height: 300px;
 margin-top: 30px;
 margin-bottom: 30px;
 object-fit: cover;
@@ -369,4 +369,39 @@ cursor: pointer;
     padding: 1px;
 }
 
+.visitanteh3{
+    color: #95CB44;
+    text-align: center;
+    font-size:xx-large;
+    margin-top: 5%;
+}
+
+.visitanteP{
+    color: rgb(144, 140, 140);
+    text-align: center  
+}
+
+#contactenos{
+    color: #008037;
+    margin-top: 5%;
+}
+
 /* termina styles sección contacto */
+
+/* Inicia style nostros*/
+
+.cabeceracontenedor{
+    display: flex;
+}
+.cabecerah2{
+    position:absolute;
+    font-size:xx-large;
+    top: 0px;
+    color: white;
+    background-color: #95CB44;
+    width: 18%;
+    margin-top: 15%;
+    padding: 1px;
+}
+
+/* Termina style nostros*/
