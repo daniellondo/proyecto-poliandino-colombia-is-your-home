@@ -1,9 +1,11 @@
+@font-face{
+    font-family: "Panton", sans-serif !important;
+    src: url("../fonts/Panton-LightCaps.ttf") format("truetype");
+  }
 body {
-    font-family: 'Roboto Flex', sans-serif !important;
     font-size: 16px !important;
     font-weight: normal !important;
 }
-
 .nav-item{
         letter-spacing: 1px !important;
         padding: 0 11px !important; 
@@ -16,14 +18,25 @@ body {
 
 header{
     width: 100%;
-    height: 140px !important;
-    padding: 10px 0 10px 0;
-    border-bottom: 1px solid #95CB44;
+    height: 133px !important;
+}
+
+.indexButton{
+    /* color: #fff; */
+    background-color: #95CB44;
+    border-color: #95CB44;
 }
 
 #logo{
-    width: 16.1vw;
+    width: 12vw;
     height: auto;
+}
+
+#indexWelcomeMessage{
+    background-color: #95CB44;
+}
+.navbar{
+    padding-bottom: 0rem !important;
 }
 
 .logolink{
@@ -65,6 +78,9 @@ header{
 
 .copyright{
     background-color: #95CB44;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    width: 100%;
 }
 
 footer{
@@ -343,8 +359,6 @@ cursor: pointer;
     border-color: white;
     text-decoration-color: white;
     cursor: pointer;
-
-
 }
 
 /* termina Galería  */
@@ -405,3 +419,61 @@ cursor: pointer;
 }
 
 /* Termina style nostros*/
+
+/*Index styles*/
+
+.botonindex {
+    margin-top: 40px;
+    background-color: #95CB44;
+    text-align: center;
+    font-size: medium;
+    border: outset #003A2C 2px;
+    border-radius: 7px;
+    padding: 20px;
+}
+.botonindex a {
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5rem; 
+}
+.botonindex a:hover{
+    color: white;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,auto);
+    width: 100%;
+    height: 28vw;
+}
+
+video{
+    width: 100%;
+    height: 28vw;
+    grid-column: 1/9;
+    grid-row: 1/9;
+    z-index: -1;
+}
+
+#overlay{
+    grid-column: 1/9;
+    grid-row: 1/9;
+    background-color: #003A2C;
+    opacity: 50%;
+}
+
+#indexMsg{
+    grid-column: 2/8;
+    grid-row: 2/8;
+    width: 100%;
+    z-index: 10;
+}
+
+#indexMsg p{
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
