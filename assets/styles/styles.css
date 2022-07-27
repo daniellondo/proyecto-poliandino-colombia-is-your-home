@@ -424,10 +424,10 @@ cursor: pointer;
 
 .botonindex {
     margin-top: 40px;
-    background-color: #95CB44;
+    background-color: #003A2C;
     text-align: center;
     font-size: medium;
-    border: outset #003A2C 2px;
+    border: outset #95CB44 2px;
     border-radius: 7px;
     padding: 20px;
 }
@@ -436,6 +436,7 @@ cursor: pointer;
     border: none;
     text-decoration: none;
     font-size: 1.5rem; 
+    font-weight: 400;
 }
 .botonindex a:hover{
     color: white;
