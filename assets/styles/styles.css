@@ -404,4 +404,23 @@ cursor: pointer;
     padding: 1px;
 }
 
+#QS{
+    color: #95CB44;
+    margin-top: 5%;
+}
+
+#quienessomos{
+    color: #777777;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+
+
+.subtarjetas{
+    color: #95CB44;
+}
+
+#tarjetas{
+    border: none;
+}
 /* Termina style nostros*/
