@@ -24,38 +24,35 @@
   <header>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container d-flex justify-content-between align-items-center">
-        <a href="./index.html" class="logolink"><img src="/assets/img/colombiaiyhLogo.svg" alt="Logo" id="logo"></a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="/assets/img/colombiaiyhLogo.svg" alt="Logo" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-center"
-          id="navbar-toggler-success">
-          <div>
-            <ul class="nav navbar-nav d-flex justify-content-between text-center text-dark">
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav navbar-nav d-flex justify-content-between text-center text-dark">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">
+                <div>
+                  <div> <i class='bx bx-home-alt-2 bx-flip-horizontal bx-lg circle-icon'></i> </div>
                   <div>
-                    <div> <i class='bx bx-home-alt-2 bx-flip-horizontal bx-lg circle-icon'></i> </div>
-                    <div>
-                      <p>Inicio</p>
-                    </div>
+                    <p>Inicio</p>
                   </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Nosotros.html">
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Nosotros.html">
+                <div>
+                  <div> <i class='bx bx-info-circle bx-flip-horizontal bx-lg circle-icon'></i> </div>
                   <div>
-                    <div> <i class='bx bx-info-circle bx-flip-horizontal bx-lg circle-icon'></i> </div>
-                    <div>
-                      <p>Nosotros</p>
-                    </div>
+                    <p>Nosotros</p>
                   </div>
-                </a>
-              </li>
-              <li class="nav-item">
+                </div>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
                 <a class="nav-link" href="Servicios.html">
                   <div>
                     <div> <i class='bx bx-landscape bx-flip-horizontal bx-lg circle-icon'></i> </div>
@@ -64,19 +61,28 @@
                     </div>
                   </div>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Contacto.html">
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" 
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                  <li><a class="dropdown-item" href="#">Tours en español</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Tours in english</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contacto.html">
+                <div>
+                  <div> <i class='bx bx-conversation bx-flip-horizontal bx-lg circle-icon'></i> </div>
                   <div>
-                    <div> <i class='bx bx-conversation bx-flip-horizontal bx-lg circle-icon'></i> </div>
-                    <div>
-                      <p>Contáctanos</p>
-                    </div>
+                    <p>Contáctanos</p>
                   </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -259,9 +265,8 @@
     </main>
     <footer>
       <div class="container">
-        <div class="row py-2 justify-content-center">
           <div class="col-lg-3 col-md-3 my-sm-0 mt-3">
-            <h3 class="h4 pb-lg-3 text-light font-weight-bold">Contacto</h2>
+            <h3 class="text-light font-weight-bold text-center">Contacto</h2>
               <div class="divcontactus">
                 <div>
                   <div class="divfootercontactus"><i class='bx bx-phone bx-lg circle-icon'></i> </div>
@@ -287,39 +292,30 @@
                 </div>
               </div>
           </div>
-          <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-            <h2 class="h4 pb-lg-3 text-light ">Redes Sociales</h2>
+          <div class="col-lg-4 col-md-4 my-sm-0 mt-4">
+            <h3 class="text-light font-weight-bold text-center">Redes Sociales</h3>
             <div class="divsocialmedia">
-              <div>
                 <a class="nav-link" href="https://wa.me/573122683231">
                   <i class='bx bxl-whatsapp bx-lg circle-icon'></i>
                 </a>
-              </div>
-              <div>
                 <a class="nav-link" href="https://fb.me/colombiaisyourhome">
                   <i class='bx bxl-facebook bx-lg circle-icon'></i>
                 </a>
-              </div>
-              <div>
                 <a class="nav-link" href="https://www.instagram.com/colombiaisyourhome">
                   <i class='bx bxl-instagram bx-lg circle-icon'></i>
                 </a>
-              </div>
-              <div>
                 <a class="nav-link" href="mailto:colombiaisyourhome@gmail.com">
                   <i class='bx bx-envelope bx-lg circle-icon'></i>
                 </a>
-              </div>
             </div>
           </div>
-        </div>
       </div>
       <div class="copyright">
           <p class="text-lg-center text-light">
             © Copyright <span id="year"></span> Colombia is your home. All Rights Reserved.
           </p>
       </div>
-    </footer>
+    </footer> 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
       crossorigin="anonymous"></script>
