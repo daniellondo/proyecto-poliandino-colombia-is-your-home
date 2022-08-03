@@ -4,6 +4,8 @@ body {
     font-weight: normal !important;
 }
 
+
+
 .divfootercontactus{
     padding-right: 1rem;
     padding-bottom: 1rem;
@@ -52,24 +54,47 @@ footer{
 
 /* inicia styles sección servicios cabecera y tours  */
 
-.cabeceracontenedor{
-    display: flex;
-}
-.cabecerah2{
-    position:absolute;
-    font-size:xx-large;
-    top: 0px;
-    color: white;
-    background-color: #95CB44;
-    width: 18%;
-    margin-top: 15%;
-    padding: 1px;
+.carouselgrid{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 570px;
 }
 
-/* termina styles sección servicios cabecera y tpurs  */
+.carouselimg{
+    height: 500px;
+}
+
+@media (min-width: 700px) {
+    .carouselgrid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 450px;
+    }
+}
+.carouselgrid{
+    height: 390px;
+}
+
+.carouselimg{
+    height: 350px;
+}
 
 
-/* inicia Styles sección de servicios galería  */
+@media (min-width:400px) {
+    .carouselgrid{
+        grid-template-columns: repeat(1, 1fr);
+/*         grid-template-rows: 350px; */
+    }
+}
+.carouselgrid{
+    height: 370px;
+}
+
+.carouselimg{
+    height: 350px;
+}
+
+
 
 /* Inicia Galería */
 .tousrservicios{
@@ -152,7 +177,7 @@ cursor: pointer;
 }
 
 
-@media (min-width:400px) {
+@media (min-width:600px) {
     .gallery-container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -320,6 +345,48 @@ cursor: pointer;
 
 
 }
+
+/* estios modal  */
+
+
+.botonmodal {
+    background-color: #95CB44;
+
+}
+.botonmodal label{
+    padding: 10px 15px;
+    background-color: #95CB44;
+    color: white;
+    border: 2px  white  solid;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.container-modal {
+    width: 100%;
+    height: 100%;
+/*     position: fixed; */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+/*     display: none; */
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#botonmodal:checked ~ .contenidomodal{
+display: flex;
+}
+
+.contenidomodal {
+    width: 100%;
+    max-width: 400%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+}
+/* terminana estilos modal */
 
 /* termina Galería  */
 
