@@ -1,11 +1,48 @@
+@font-face{
+    font-family: "Panton", sans-serif !important;
+    src: url("../fonts/Panton-LightCaps.ttf") format("truetype");
+  }
 body {
-    font-family: GothamLight, Tahoma, Geneva, sans-serif !important;
-    font-size: 1.5rem !important;
+    font-size: 16px !important;
     font-weight: normal !important;
 }
+.nav-item{
+        letter-spacing: 1px !important;
+        padding: 0 11px !important; 
+        border-left: solid #95CB44;
+}
 
+.nav-item:last-child{
+    border-right: solid #95CB44;
+}
 
+header{
+    width: 100%;
+    height: 133px !important;
+}
 
+.indexButton{
+    /* color: #fff; */
+    background-color: #95CB44;
+    border-color: #95CB44;
+}
+
+#logo{
+    width: 12vw;
+    height: auto;
+}
+
+#indexWelcomeMessage{
+    background-color: #95CB44;
+}
+.navbar{
+    padding-bottom: 0rem !important;
+}
+
+.logolink{
+    width: 10%;
+    height: auto;
+}
 .divfootercontactus{
     padding-right: 1rem;
     padding-bottom: 1rem;
@@ -41,6 +78,9 @@ body {
 
 .copyright{
     background-color: #95CB44;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    width: 100%;
 }
 
 footer{
@@ -48,7 +88,7 @@ footer{
 }
 
 .bx{
-    color: #95CB44;
+    color: #008037;
 }
 
 
@@ -112,7 +152,7 @@ font-size: medium;
 .gallery-container {
     margin: auto;
     display: flex;
-    width: 100%;
+    width: 94vw;
     height: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -124,8 +164,8 @@ font-size: medium;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-auto-rows: 320px;
-    padding: 20px;
-    grid-gap: 10px;
+    padding: 10px;
+    grid-gap: 5px;
 }
 
 .gallery__item {
@@ -134,8 +174,8 @@ font-size: medium;
 }
 
 .gallery__img {
-width: 320px;
-height: 320px;
+width: 300px;
+height: 300px;
 margin-top: 30px;
 margin-bottom: 30px;
 object-fit: cover;
@@ -342,8 +382,6 @@ cursor: pointer;
     border-color: white;
     text-decoration-color: white;
     cursor: pointer;
-
-
 }
 
 /* estios modal  */
@@ -392,3 +430,120 @@ display: flex;
 
 
 /* itermina Styles sección de servicios galería  */
+
+
+/* inicia styles sección contacto  */
+
+.cabeceracontenedor{
+    display: flex;
+}
+.cabecerah2{
+    position:absolute;
+    font-size:xx-large;
+    top: 0px;
+    color: white;
+    background-color: #95CB44;
+    width: 18%;
+    margin-top: 15%;
+    padding: 1px;
+}
+
+.visitanteh3{
+    color: #95CB44;
+    text-align: center;
+    font-size:xx-large;
+    margin-top: 5%;
+}
+
+.visitanteP{
+    color: rgb(144, 140, 140);
+    text-align: center  
+}
+
+#contactenos{
+    color: #008037;
+    margin-top: 5%;
+}
+
+/* termina styles sección contacto */
+
+/* Inicia style nostros*/
+
+.cabeceracontenedor{
+    display: flex;
+}
+.cabecerah2{
+    position:absolute;
+    font-size:xx-large;
+    top: 0px;
+    color: white;
+    background-color: #95CB44;
+    width: 18%;
+    margin-top: 15%;
+    padding: 1px;
+}
+
+/* Termina style nostros*/
+
+/*Index styles*/
+
+.botonindex {
+    margin-top: 40px;
+    background-color: #003A2C;
+    text-align: center;
+    font-size: medium;
+    border: outset #95CB44 2px;
+    border-radius: 7px;
+    padding: 20px;
+}
+.botonindex a {
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5rem; 
+    font-weight: 400;
+}
+.botonindex a:hover{
+    color: white;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,auto);
+    width: 100%;
+    height: 28vw;
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#overlay{
+    grid-column: 1/9;
+    grid-row: 1/9;
+    background-color: #003A2C;
+    opacity: 50%;
+}
+
+#indexMsg{
+    grid-column: 2/8;
+    grid-row: 5/8;
+    width: 100%;
+    z-index: 10;
+}
+
+#indexMsg p{
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
