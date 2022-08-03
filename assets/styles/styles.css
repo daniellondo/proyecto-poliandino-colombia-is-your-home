@@ -2,10 +2,31 @@
     font-family: "Panton", sans-serif !important;
     src: url("../fonts/Panton-LightCaps.ttf") format("truetype");
   }
+
+  html, body, video{
+    height:100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+video{
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+main, main section,main section,.contenedor{
+    height: 100%;
+}
+
 body {
     font-size: 16px !important;
     font-weight: normal !important;
 }
+
 .nav-item{
         letter-spacing: 1px !important;
         padding: 0 11px !important; 
@@ -16,9 +37,9 @@ body {
     border-right: solid #95CB44;
 }
 
-header{
-    width: 100%;
-    height: 133px !important;
+footer{
+    background-color: #003A2C;
+    align-items: self-end;
 }
 
 .indexButton{
@@ -36,7 +57,7 @@ header{
     background-color: #95CB44;
 }
 .navbar{
-    padding-bottom: 0rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
 .logolink{
@@ -83,9 +104,7 @@ header{
     width: 100%;
 }
 
-footer{
-    background-color: #003A2C;
-}
+
 
 .bx{
     color: #008037;
@@ -512,19 +531,6 @@ display: flex;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(8,auto);
     width: 100%;
-    height: 28vw;
-}
-
-video{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
 }
 
 #overlay{
