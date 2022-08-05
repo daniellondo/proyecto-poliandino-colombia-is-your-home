@@ -32,14 +32,13 @@ body {
     font-weight: normal !important;
 }
 
+
+
 .nav-item{
         letter-spacing: 1px !important;
         padding: 0 11px !important; 
         border-left: solid #95CB44;
-}
-
-.nav-item:last-child{
-    border-right: solid #95CB44;
+        border-right: solid #95CB44;
 }
 
 footer{
@@ -62,10 +61,6 @@ footer{
     color: white !important; 
 }
 
-.dropdown-menu[data-bs-popper] {
-    left: -2rem !important;
-}
-
 .btn-secondary {
     background-color: #008037 !important;
     border-color: #008037 !important;
@@ -74,6 +69,7 @@ footer{
 .dropdown{
     display: flex !important;
     align-items: center !important;
+    justify-content: center;
 }
 
 .btn:focus {
@@ -88,13 +84,52 @@ footer{
 
 .container-fluid{
     justify-content: center !important; 
+    margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 1199.98px) { 
+.nav-link div{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.navP{
+    margin-bottom: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+@media (min-width: 1094px){
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1017px){
     .navbar-brand {
         margin-right: 15rem !important;
         padding-bottom: 0.1rem !important;
-    } 
+    }
+}
+
+@media only screen and (min-width: 992px) { 
+    .navbar-brand {
+        padding-bottom: 0.1rem !important;
+    }
+    .nav-item:last-child,.nav-item:nth-child(2),.nav-item:nth-child(3){
+        border-right: solid #95CB44;
+        border-left: none;
+    }
+    .container-fluid{
+        margin-bottom: 0;
+    }
+    .navP{
+        margin-bottom: 1rem !important;
+    }
+    .nav-link div{
+        display: block !important;
+    }
  }
 
 .navbar-collapse {
@@ -608,3 +643,21 @@ display: flex;
     text-decoration: none;
 }
 
+input:-internal-autofill-selected {
+    color: #003A2C !important;
+}
+
+.form-control {
+    background-color: rgb(149, 203, 68, 15%) !important;
+    border: 1px solid #003A2C !important;
+    color: #003A2C !important;
+}
+
+.form-control:focus {
+    border-color: #95CB44 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #95CB44 !important;
+  }
+.form-control::selection{
+    color: white;
+    background-color: #95CB44;
+}
