@@ -87,11 +87,16 @@ footer{
     margin-bottom: 1rem;
 }
 
+
 .nav-link div{
     display: flex !important;
     flex-direction: row !important;
     justify-content: center;
     align-items: center;
+}
+
+.socialmedia{
+ padding: 1vw !important;
 }
 
 .navP{
@@ -184,9 +189,16 @@ footer .container{
 
 .divsocialmedia{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    right:0px;
+    bottom:50px;
+    z-index:999;
+}
+
+.btn-whatsapp {
+    display:block;
+
 }
 
 .copyright{
@@ -661,3 +673,4 @@ input:-internal-autofill-selected {
     color: white;
     background-color: #95CB44;
 }
+
