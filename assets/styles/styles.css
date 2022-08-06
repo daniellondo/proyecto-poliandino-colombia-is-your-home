@@ -423,4 +423,37 @@ cursor: pointer;
 #tarjetas{
     border: none;
 }
+
+#lema{
+    color: #008037;
+    font-size: x-large;
+}
+
+#p{
+    color: #008037;
+    font-size: large;
+}
+
+
+
+#CIYH{
+    color: #95CB44;
+    font-size: xx-large;
+}
+
+#NL{
+    color: #95CB44;
+}
+
+#logo2{
+
+    width: 20%;
+    height: auto;
+    margin-top: 0%;
+    margin-left: 40%;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+
+}
+
 /* Termina style nostros*/
