@@ -113,8 +113,6 @@ footer {
     margin-left: 1rem;
 }
 
-
-
 @media only screen and (min-width: 992px) {
     .navbar-brand {
         padding-bottom: 0.1rem !important;
@@ -149,8 +147,6 @@ footer {
     .politicas {
         flex-direction: row !important;
     }
-
-
 }
 
 @media (min-width: 1094px) {
@@ -291,6 +287,7 @@ footer .container {
     margin: 10px; 
 }
 
+
 .gallery__img {
     grid-column: 2/8;
     grid-row: 2/8;
@@ -301,6 +298,7 @@ footer .container {
 
 .gallery__title {
     grid-column: 2/8;
+    grid-row: 2;
     font-size: medium;
     position: absolute;
     margin-right:auto;
@@ -311,28 +309,17 @@ footer .container {
     margin-top: 15%;
 }
 
-.capa {
+.gallery__title_english{
     grid-column: 2/8;
-    grid-row: 2/8;
-    width: 300px;
-    height: 300px;
+    grid-row: 3;
+    font-size: medium;
     position: absolute;
+    margin-right:auto;
     color: white;
-    text-align: center;
-    background: rgba(149, 203, 68, 100);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.gallery-container :hover>.capa {
-    opacity: 1;
-    visibility: visible;
-}
-
-.h4servicios {
-    margin-top: 100px;
-    font-size: small;
+    background-color: orange;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 15%;
 }
 
 .botonservicios {
@@ -348,6 +335,13 @@ footer .container {
     padding: 10px;
 }
 
+.h4servicios {
+    margin-top: 100px;
+    font-size: small;
+}
+
+
+
 .botonindex a {
     color: white;
     border: none;
@@ -355,49 +349,6 @@ footer .container {
     font-size: 1.5rem;
     font-weight: 400;
 }
-/* estios modal  */
-
-
-.botonmodal {
-    background-color: #95CB44;
-
-}
-
-.botonmodal label {
-    padding: 10px 15px;
-    background-color: #95CB44;
-    color: white;
-    border: 2px white solid;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.container-modal {
-    width: 100%;
-    height: 100%;
-    /*     position: fixed; */
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /*     display: none; */
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-
-#botonmodal:checked~.contenidomodal {
-    display: flex;
-}
-
-.contenidomodal {
-    width: 100%;
-    max-width: 400%;
-    padding: 20px;
-    background-color: white;
-    border-radius: 3px;
-}
-
-/* terminana estilos modal */
 
 /* termina Galería  */
 
@@ -458,6 +409,7 @@ footer .container {
     border: outset #95CB44 2px;
     border-radius: 7px;
     padding: 20px;
+    margin: 20px;
 }
 
 .botonindex a {
@@ -548,6 +500,55 @@ input:-internal-autofill-selected {
     justify-content: space-around;
 }
 
+.politicas a{
+    text-align: center;
+}
+
+
+/* The Modal (background) */
+.modal {
+    background-color: rgba(149, 203, 68,0.5);
+  }
+  
+.modal-header .btn-close {
+     margin: 0 !important;
+     position: relative;
+}
+
+.modal-header {
+    justify-content: center !important;
+}
+
+.modal-footer {
+    padding: 0 !important;
+    align-items: center;
+    border-top: 0 !important;
+}
+
+.modal-footer>* {
+    margin: 0.5rem !important;
+}
+
+.capa {
+    grid-column: 2/8;
+    grid-row: 2/8;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    background: rgba(149, 203, 68, 100);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gallery-container :hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 /* modal */
 .swal2-popup {
     padding: 0 !important;
@@ -563,7 +564,6 @@ input:-internal-autofill-selected {
 }
 
 .swal2-styled.swal2-confirm {
-    margin-top: 40px;
     background-color: #003A2C;
     text-align: center;
     font-size: medium;
@@ -576,4 +576,8 @@ input:-internal-autofill-selected {
     font-size: 1.25rem;
     font-weight: 300 !important;
     box-shadow: none !important;
+}
+
+.swal2-actions {
+    margin: 0;
 }

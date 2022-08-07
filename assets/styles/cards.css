@@ -57,6 +57,7 @@ section .section-title {
     top: 0;
     left: 0;
     background: white;
+    min-width: 100%;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
