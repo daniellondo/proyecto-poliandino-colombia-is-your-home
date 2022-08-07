@@ -19,14 +19,16 @@
 <body>
   <video autoplay="autoplay" loop="true" muted defaultmuted playsinline>
     <source src="./assets/video/video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+    Your browser does not support the video tag.
   </video>
   <header>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"><img src="./assets/img/colombiaiyhLogo.svg" alt="Logo" id="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="./index.html"><img src="./assets/img/colombiaiyhLogo.svg" alt="Logo"
+            id="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -52,25 +54,19 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <div class="dropdown">
-                <a class="nav-link" href="./pages/Servicios.html">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div>
+                  <div> <i class='bx bx-landscape bx-flip-horizontal bx-lg circle-icon'></i> </div>
                   <div>
-                    <div> <i class='bx bx-landscape bx-flip-horizontal bx-lg circle-icon'></i> </div>
-                    <div>
-                      <p class="navP">Tours</p>
-                    </div>
+                    <p class="navP">Tours</p>
                   </div>
-                </a>
-                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" 
-                data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-                  <li><a class="dropdown-item" href="#">Tours en español</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Tours in english</a></li>
-                </ul>
-              </div>
+                </div>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./pages/ServiciosEsp.html">Tours en español</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./pages/ServiciosEng.html">Tours in english</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pages/Contacto.html">
@@ -98,76 +94,44 @@
             Ecoturismo, Patrimonio material e inmaterial...
             Acompáñanos...</p>
           <p>
-            <button class="botonindex"> <a href="#" class="my-2 lead">Tours en español</a></button>
-            <button class="botonindex"> <a href="#" class="my-2 lead">Tours in english</a></button>
+            <button class="botonindex"> <a href="./pages/ServiciosEsp.html" class="my-2 lead">Tours en español</a></button>
+            <button class="botonindex"> <a href="./pages/ServiciosEng.html" class="my-2 lead">Tours in english</a></button>
           </p>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="container">
-        <div class="col-lg-3 col-md-3 my-sm-0 mt-3">
-          <h3 class="text-light font-weight-bold text-center">Contacto</h2>
-            <div class="divcontactus">
-              <div>
-                <div class="divfootercontactus"><i class='bx bx-phone bx-lg circle-icon'></i> </div>
-                <div>
-                  <div>
-                    <h5 class="text-light">Teléfono</h5>
-                  </div>
-                  <div>
-                    <p class="text-light">3122683231</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="divfootercontactus"> <i class='bx bx-current-location bx-lg circle-icon'></i> </div>
-                <div>
-                  <div>
-                    <h5 class="text-light">Ubicación</h5>
-                  </div>
-                  <div>
-                    <p class="text-light">Envigado</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="w-100">
-          <ul>
-            <li>
-              <a href="#" class="lead text-decoration-none text-justify text-light">Política de privacidad y tratamiento de los datos personales</a> 
-            </li>
-            <li>
-              <a href="#" class="lead text-decoration-none text-justify text-light">Términos y Condiciones</a>
-            </li>
-            <li>
-              <a href="#" class="lead text-decoration-none text-justify text-light">Colombia Is Your Home rechaza la explotación, el turismo sexual y la pornografía infantil, por favor denunciar estos comportamientos según lo establecido en la Ley 1336 de 2009 y ley 679 de 2001. Colombia Is Your Home cumple la Ley 17 de 1981 y Resolución 1367 de 2000 contra la comercialización y tráfico de especies de fauna y flora silvestre.</a>
-            </li>
-          </ul>
-        </div>
+    <div class="container p-5">
+      <div class="politicas">
+        <a href="#" class="lead text-decoration-none text-justify text-light">Declaración de derechos y
+          responsabilidades</a>
+        <br>
+        <a href="#" class="lead text-decoration-none text-justify text-light">Política de datos</a>
+        <br>
+        <a href="#" class="lead text-decoration-none text-justify text-light">Política de cookies</a>
+      </div>
     </div>
     <div class="divsocialmedia">
       <a class="nav-link socialmedia" href="https://wa.me/573122683231">
-        <i class='bx bxl-whatsapp bx-md circle-icon'></i>
+        <i class='bx bxl-whatsapp bx-md socialmediacircle'></i>
       </a>
       <a class="nav-link socialmedia" href="https://fb.me/colombiaisyourhome">
-        <i class='bx bxl-facebook bx-md circle-icon'></i>
+        <i class='bx bxl-facebook bx-md socialmediacircle'></i>
       </a>
       <a class="nav-link socialmedia" href="https://www.instagram.com/colombiaisyourhome">
-        <i class='bx bxl-instagram bx-md circle-icon'></i>
+        <i class='bx bxl-instagram bx-md socialmediacircle'></i>
       </a>
       <a class="nav-link socialmedia" href="mailto:colombiaisyourhome@gmail.com">
-        <i class='bx bx-envelope bx-md circle-icon'></i>
+        <i class='bx bx-envelope bx-md socialmediacircle'></i>
       </a>
-  </div>
-    <div class="copyright">
-        <p class="text-lg-center text-light">
-          © Copyright <span id="year"></span> Colombia is your home. All Rights Reserved.
-        </p>
     </div>
-  </footer> 
+    <div class="copyright">
+      <p class="text-lg-center">
+        © Copyright <span id="year"></span> Colombia is your home. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
