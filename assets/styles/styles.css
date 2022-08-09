@@ -34,8 +34,6 @@ body {
     font-weight: normal !important;
 }
 
-
-
 .nav-item {
     letter-spacing: 1px !important;
     padding: 0 11px !important;
@@ -120,7 +118,9 @@ footer {
 
     .nav-item:last-child,
     .nav-item:nth-child(2),
-    .nav-item:nth-child(3) {
+    .nav-item:nth-child(3),
+    .nav-item:nth-child(4)
+     {
         border-right: solid #95CB44;
         border-left: none;
     }
@@ -322,7 +322,7 @@ footer .container {
     margin-top: 15%;
 }
 
-.botonservicios {
+.botonservicios{
     margin-top: 40px;
     background-color: #003A2C;
     text-align: center;
@@ -580,4 +580,52 @@ input:-internal-autofill-selected {
 
 .swal2-actions {
     margin: 0;
+}
+
+.crt-grid-post {
+    padding: 3px !important;
+}
+
+.crt-post-header, .crt-post-share,.crt-logo,.crt-popup-header,.crt-popup-footer{
+    display: none;
+    visibility: hidden;
+}
+
+.crt-post-text{
+    padding-top: 5px !important;
+}
+
+
+@media screen and (max-width: 910px){
+    .crt-popup-wrapper .crt-popup-container {
+        padding: 0 !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        padding-top: 20px !important;
+    }
+    .crt-popup-wrapper .crt-popup.crt-has-read-more.has-image .crt-popup-right {
+        padding-bottom: 1px !important;
+    }
+    .crt-popup-wrapper .crt-popup.crt-has-read-more.has-image .crt-popup-right .crt-popup-read-more {
+        bottom: 1px !important;
+    }
+    .crt-popup-wrapper .crt-popup .crt-popup-read-more {
+        padding: 0px !important;
+    }
+
+}
+
+.crt-button{
+    margin-top: 1px;
+    background-color: #003A2C !important;
+    text-align: center;
+    font-size: medium !important;
+    color: white !important;
+    border: outset #95CB44 2px;
+    border-radius: 7px !important;
+    text-decoration-color: white;
+}
+
+.crt-popup-wrapper .crt-popup .crt-popup-right {
+    font-family: "Panton", sans-serif !important;
 }
