@@ -112,6 +112,7 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+
     .navbar-brand {
         padding-bottom: 0.1rem !important;
     }
@@ -138,9 +139,9 @@ footer {
     }
 }
 
-@media (min-width: 1117px) {
+@media (min-width: 1290px) {
     .navbar-brand {
-        margin-right: 15rem !important;
+         margin-right: 15rem !important; 
         padding-bottom: 0.1rem !important;
     }
 
@@ -149,11 +150,8 @@ footer {
     }
 }
 
-@media (min-width: 1094px) {
-    .navbar-expand-lg .navbar-toggler {
-        display: none !important;
-    }
-}
+
+
 
 .navbar-collapse {
     flex-grow: 0 !important;
@@ -266,78 +264,61 @@ footer .container {
 .gallerySection{
     display: flex;
     justify-content: center;
+    padding: 1px;
 }
 
 .gallery-container {
     display: flex;
-    width: 80%;
+    width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: stretch;
     flex-wrap: wrap;
     align-items: center;
+    column-fill: 6; 
 }
 
 .gallery__item {
-    flex: 1 0 21%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, auto);
-    justify-content: space-around;
-    position: relative;
-    margin: 10px; 
 }
 
-
 .gallery__img {
-    grid-column: 2/8;
-    grid-row: 2/8;
+    grid-column: 1/9;
+    grid-row: 1/9;
     object-fit: cover;
-    width: 300px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
 }
 
 .gallery__title {
-    grid-column: 2/8;
+    grid-column: 1/4;
     grid-row: 2;
     font-size: medium;
-    position: absolute;
-    margin-right:auto;
     color: white;
     background-color: #95CB44;
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: 15%;
-}
-
-.gallery__title_english{
-    grid-column: 2/8;
-    grid-row: 3;
-    font-size: medium;
-    position: absolute;
-    margin-right:auto;
-    color: white;
-    background-color: orange;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 15%;
 }
 
 .botonservicios{
+    grid-column: 3/7;
+    grid-row: 4;
     margin-top: 40px;
     background-color: #003A2C;
     text-align: center;
-    font-size: medium;
+    font-size: auto;
     color: white;
     border: outset #95CB44 2px;
     border-radius: 7px;
     text-decoration-color: white;
     cursor: pointer;
-    padding: 10px;
 }
 
 .h4servicios {
-    margin-top: 100px;
-    font-size: small;
+    grid-column: 2/8 !important;
+    grid-row: 3 !important;
+    font-weight: 300;
 }
 
 
@@ -530,11 +511,13 @@ input:-internal-autofill-selected {
 }
 
 .capa {
-    grid-column: 2/8;
-    grid-row: 2/8;
-    width: 300px;
-    height: 300px;
-    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-column: 1/9;
+    grid-row: 1/9;
+    width: 100%;
+    height: auto;
     color: white;
     text-align: center;
     background: rgba(149, 203, 68, 100);
@@ -544,8 +527,8 @@ input:-internal-autofill-selected {
 }
 
 .gallery-container :hover>.capa {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 
@@ -557,10 +540,16 @@ input:-internal-autofill-selected {
     background: #fff;
     color: #003A2C !important;
     font-weight: 300 !important;
+    align-self: center !important;
+    width: 50em !important;
 }
 
 .swal2-title {
     color: #003A2C !important;
+}
+.swal2-image{
+ margin: 0 !important;
+ padding: 10px;
 }
 
 .swal2-styled.swal2-confirm {
@@ -582,11 +571,17 @@ input:-internal-autofill-selected {
     margin: 0;
 }
 
+.swal2-title{
+    font-weight: 400;
+    padding: 0 !important;
+    padding-top: 2px;
+}
+
 .crt-grid-post {
     padding: 3px !important;
 }
 
-.crt-post-header, .crt-post-share,.crt-logo,.crt-popup-header,.crt-popup-footer{
+.crt-post-header, .crt-post-share,.crt-logo,.crt-popup-header,.crt-popup-footer,.crt-icon-instagram{
     display: none;
     visibility: hidden;
 }
@@ -629,3 +624,22 @@ input:-internal-autofill-selected {
 .crt-popup-wrapper .crt-popup .crt-popup-right {
     font-family: "Panton", sans-serif !important;
 }
+
+
+.containerTours{
+    max-width: 100%;
+}
+
+.row{
+    --bs-gutter-x: 0 !important; 
+    --bs-gutter-y: 0 !important;
+}
+
+.row>* {
+    padding-top: 5px !important; 
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+    padding-bottom: 5px;
+}
+
+
