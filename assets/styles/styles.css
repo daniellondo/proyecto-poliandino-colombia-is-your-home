@@ -347,8 +347,11 @@ footer .container {
     margin-top: 1rem;
 }
 
-.visitanteP {
+.visitanteP,ul {
     color: rgb(144, 140, 140);
+}
+.FLead{
+    font-weight: 300 !important;
 }
 
 #cabeceraColor {
@@ -682,5 +685,6 @@ input:-internal-autofill-selected {
     padding-left: 5px !important;
     padding-bottom: 5px;
 }
+
 
 
